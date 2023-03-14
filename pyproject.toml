@@ -1,0 +1,14 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "luiza", email = "luiza.torrens.2006@gmail.com"},
+]
+dependencies = [
+    "django>=4.1.7",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
