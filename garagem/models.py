@@ -7,4 +7,8 @@ class Marca(models.Model):
     def _str_(self):
         return self.nome.upper()
 
-cç
+class Categoria(models.Model):
+    descricao= models.CharField(max_length=100)
+
+    def _str_(self):
+        return self.descricao
