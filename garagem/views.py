@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework.viewsets import ModelViewSet
 
 from garagem.models import Marca, Categoria, Cor, Acessorio, Modelo, Veiculo
-from garagem.serializers import MarcaSerializer, CategoriaSerializer, CorSerializer, AcessorioSerializer, ModeloSerializer, VeiculoSerializer
+from garagem.serializers import MarcaSerializer, CategoriaSerializer, CorSerializer, AcessorioSerializer, ModeloSerializer, VeiculoSerializer, VeiculoDetailSerializer, VeiculoListSerializer
 
 class MarcaViewSet(ModelViewSet):
     queryset = Marca.objects.all()
@@ -26,5 +26,11 @@ class ModeloViewSet(ModelViewSet):
     serializer_class = ModeloSerializer
 
 class VeiculoViewSet(ModelViewSet):
-    queryset = Modelo.objects.all()
-    serializer_class = Veiculo
+    queryset = Veiculo.objects.all()
+
+    def get_serializer_class(self):
+        if self.action == "list":
+            return VeiculoListSerializer
+        elif self.action == "retrieve":
+            return VeiculoDetailSerializer
+        return VeiculoSerializer
