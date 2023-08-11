@@ -19,6 +19,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "django-cors-headers"
+version = "4.2.0"
+requires_python = ">=3.8"
+summary = "django-cors-headers is a Django application for handling the server headers required for Cross-Origin Resource Sharing (CORS)."
+dependencies = [
+    "Django>=3.2",
+]
+
+[[package]]
 name = "djangorestframework"
 version = "3.14.0"
 requires_python = ">=3.6"
@@ -48,7 +57,7 @@ summary = "Provider of IANA time zone data"
 [metadata]
 lock_version = "4.2"
 groups = ["default"]
-content_hash = "sha256:84c9368c23e0f9fbc9c3e3ef34fdaa0c6b346a7ea627ae05e0c9f2c8567fcbc7"
+content_hash = "sha256:bc93ddd2f50f85c090a99c76bcb9a96b8df952965aeca3e0ca3d1961f8f858e0"
 
 [metadata.files]
 "asgiref 3.6.0" = [
@@ -58,6 +67,10 @@ content_hash = "sha256:84c9368c23e0f9fbc9c3e3ef34fdaa0c6b346a7ea627ae05e0c9f2c85
 "django 4.1.7" = [
     {url = "https://files.pythonhosted.org/packages/89/86/59e237f7176cfc1544446914fa329fd560bb8fce46be52dd7af5dc7c54f9/Django-4.1.7-py3-none-any.whl", hash = "sha256:f2f431e75adc40039ace496ad3b9f17227022e8b11566f4b363da44c7e44761e"},
     {url = "https://files.pythonhosted.org/packages/9f/a7/07939866241b7e8f8d3bf164b7d6ad428163723e29dd472700f8ab0e5fd5/Django-4.1.7.tar.gz", hash = "sha256:44f714b81c5f190d9d2ddad01a532fe502fa01c4cb8faf1d081f4264ed15dcd8"},
+]
+"django-cors-headers 4.2.0" = [
+    {url = "https://files.pythonhosted.org/packages/a7/f7/ae456ea653acf99c471287741f84f9e5c8a1458d1b44715ea94869e27b56/django_cors_headers-4.2.0-py3-none-any.whl", hash = "sha256:9ada212b0e2efd4a5e339360ffc869cb21ac5605e810afe69f7308e577ea5bde"},
+    {url = "https://files.pythonhosted.org/packages/cb/5d/739ec1adbe848cdb0f07c3b621561c9589e491cc0443a8d16cec23c107a5/django_cors_headers-4.2.0.tar.gz", hash = "sha256:f9749c6410fe738278bc2b6ef17f05195bc7b251693c035752d8257026af024f"},
 ]
 "djangorestframework 3.14.0" = [
     {url = "https://files.pythonhosted.org/packages/8e/53/5b2a002c5ebafd60dff1e1945a7d63dee40155830997439a9ba324f0fd50/djangorestframework-3.14.0.tar.gz", hash = "sha256:579a333e6256b09489cbe0a067e66abe55c6595d8926be6b99423786334350c8"},
