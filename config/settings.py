@@ -151,7 +151,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 FILE_UPLOAD_PERMISSIONS = 0o640
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Livraria API",
-    "DESCRIPTION": "API para gerenciamento de livraria, incluindo endpoints e documentação.",
+    "TITLE": "Garagem API",
+    "DESCRIPTION": "API para gerenciamento de garagem, incluindo endpoints e documentação.",
     "VERSION": "1.0.0",
 }
