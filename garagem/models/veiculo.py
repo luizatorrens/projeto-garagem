@@ -17,10 +17,6 @@ class Veiculo(models.Model):
     imagem = models.ManyToManyField(
         Image,
         related_name="+",
-        # on_delete=models.CASCADE,
-        null=True,
-        blank=True,
-        default=None,
     )
     def __str__(self):
         return f"{self.modelo}- {self.ano}"
